@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>T-Rex Game</title>
+	<link rel="icon" href="img/logo.png">
+</head>
+
+<style type="text/css">
+	
+	body{
+		background-color: #f7f7f7;
+	}
+	.titre{
+		display: inline-block;
+		font-family: Franklin Gothic Medium;
+		font-size: 70px;
+	}
+	.jeu{
+		margin-top: 50px;
+	}
+	.description{
+		text-align: center;
+    	color: #8a8a8a;
+		font-size: 15px;
+    	line-height: 1.2em;
+    	font-family: MS,Lucida;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+
+</style>
+
+<body>
+	<center>
+	 	<h1 class="titre" class="text1" style="color:#7687FF" >T</h1>
+	 	<h1 class="titre" class="text2" style="color:#484848">-</h1>
+	 	<h1 class="titre" class="text3" style="color:#FF5151">R</h1>
+		<h1 class="titre" style="color:#484848">EX GAME</h1>
+
+		<p class="description">PRESS "SPACE" to start the game and jump your T-Rex. Use down arrow (↓) to duck. Keep <br/>
+		tapping space to jump the dino trex over the cacti and other hurdles that come along. You can <br/>
+		jump over or duck below the flying dinosaurs that Depending on how high they are flying. The <br/>
+		longer your trex goes, the more points you start getting.</p>
+
+		<br/>
+
+		<img class="jeu" src="img/background.png">
+
+		<video id="video1" width="1px" >
+			<source src="img/rickroll.mp4">
+		</video>
+
+	</center>
+	
+
+</body>
+
+<script type="text/javascript">
+	
+	var myVideo = document.getElementById("video1");
+
+	document.body.onkeyup = function(e){
+		if(e.keyCode == 32){
+			myVideo.play(); 
+			myVideo.width = 840;
+			window.scroll(0,500);
+	    }
+	}
+
+</script>
+
+</html>
